@@ -1,0 +1,43 @@
+.header {
+    background: #000000
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.header_logo {
+    padding: 13px 16px;
+    background: #FFFFFF;
+    border-radius: 5px;
+   :hover {
+    background-color: aqua;
+    }
+}
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_menu {
+    display: flex;
+    align-items: center;
+    column-gap: 47px;
+}
+.header_link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.header_button {
+    background: #5BC8EF;
+    border-radius: 35px;
+    padding: 19px 38px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.header_menu_link {
+    display: none;
+}
