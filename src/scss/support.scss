@@ -1,0 +1,95 @@
+.support {
+    background: #455EA7;
+    padding: 60px 0 52px 0;
+    @include _768 {
+        padding: 100px 0 132px 0;
+    }
+}
+.support_inner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 80px;
+    @include _1024 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.support_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include _768{
+        width: 75%;
+    }
+    @include _1024{
+        width: 50%;
+    }
+}
+.support_text {
+    margin-bottom: 54px;
+    text-align: center;
+    @include _768 {
+        margin-bottom: 64px;
+        text-align: left;
+    }
+}
+.support_info_tracker {
+    background: #F2F2F2;
+    box-shadow: 0px 15px 70px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include _768 {
+        padding: 30px 45px;
+        max-width: 376px;
+    }
+}
+.support_tracker_menu {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.tracker_title {
+    color: #4F4F4F;  
+}
+.tracker_number {
+    padding: 15px 0;
+    font-size: 48px;
+    color: #455EA7;
+}
+.tracker_tickets {
+    margin-bottom: 15px;
+    color: #4F4F4F;
+}
+.button_tracker {
+    color: #455EA7;
+    background: #F2F2F2;
+    border: 1px solid #455EA7;
+    border-radius: 20px;
+    padding: 10px 14px;
+    }
+.support_img {
+    width: 50%;
+    
+}
+.support_image{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.support_tracker_img_text {
+    text-align: center;
+    color: #5BC8EF;
+    font-size: 16px;
+    line-height: 30px;
+}
+.support_chart {
+    @include _768{
+        width: 50%;
+    }
+}
+.support_chart_img{
+    width: 100%;
+}

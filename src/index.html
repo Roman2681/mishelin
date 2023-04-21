@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"Главная" })
+  @@include('./html/head.html',{ "title":"Главная" })
   <body>
-    @@include('./html/header.html',{})
-    <main>@@('./html/hero.html',{});</main>
-    @@include('html/footer.html',{})
+    <div class="wrapper">
+      @@include('./html/header.html',{})
+      <main class="main">
+        @@include('./html/hero.html',{}) @@include('./html/features.html',{}) @@include('./html/support.html',{})
+        @@include('./html/pricing.html',{}) @@include('./html/testimonials.html',{}) @@include('./html/contact.html',{})
+      </main>
+      @@include('./html/footer.html',{})
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

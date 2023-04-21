@@ -1,26 +1,57 @@
 .hero {
-    background-image: url(../img/pexels-gustavo-fring-6720537\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
+    // background-image: url(../img/pexels-gustavo-fring-6720537\ 1.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    padding-top: 130px;
+    position: relative;
+    text-align: center;
+    background: url(../img/pexels-gustavo-fring-6720537\ 1.png) no-repeat center / cover;
+    @include _768 {
+        background-image: url(../img/pexels-gustavo-fring-6720537\ 1\ \(1\).png);
+        text-align: left;
+        }
 }
 .hero_inner {
-    padding-top: 120px;
+    padding: 80px 0;
+    @include _768{
+        padding: 120px 0 200px;
+    }
 }
 .hero_title {
-   max-width: 714px ;
+    min-width: 345px;
+    margin-bottom: 20px;
+    @include _768{
+        max-width: 714px;
+    }
 }
 .h1 {
     font-weight: 700;
-    font-size: 48px;
-    line-height: 65px;
+    font-size: 32px;
+    line-height: 44px;
     text-transform: uppercase;
     color: #FFFFFF;
+    @include _768{
+    font-size: 48px;
+    line-height: 65px;
+    }
 }
 .hero_text {
+    margin-bottom: 20px;
+    @include _768{
     max-width: 596px;
-}
-.app_store {
+    }
 }
 .hero_img {
+    display: none;
+    @include _1600 {
+        width: 45%;
+        display: flex;
+        max-width: 893px;
+        max-height: 615px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }

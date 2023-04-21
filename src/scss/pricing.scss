@@ -1,0 +1,84 @@
+.pricing {
+    padding: 60px 0 55px 0;
+    
+    @include _1600 {
+    padding: 50px 0 80px 0;
+    background: url(../img/footprints.png) top right no-repeat;
+    }
+}
+.pricing_inner {
+}
+.pricing_info {
+    margin-bottom: 47px;
+    @include _768 {
+        margin-bottom: 60px;
+    }
+}
+.pricing_title {
+    margin-bottom: 10px;
+ 
+}
+.pricing_text {
+    color: #4F4F4F;
+    text-align: center;
+    @include _768 {
+        color: #333333;
+        max-width: 741px;
+        text-align: left;
+    }
+}
+.pricing_cards {
+    display: grid;
+    gap: 45px;
+    @include _1024 {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+       
+    }
+    @include _1440 {
+        gap: 60px;
+        padding: 0 120px;
+    }
+}
+.pricing_card {
+    border-radius: 30px;
+    box-shadow: 0px 15px 70px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.pricing_card_menu {
+    background: linear-gradient(220.27deg, #5BC8EF 23.91%, #455EA7 95.9%);
+    text-align: center;
+    padding: 20px 0;
+}
+.pricing_card_title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+.pricing_card_price {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.pricing_time_work {
+    text-align: center;
+}
+.pricing_card_content {
+    padding: 0 50px;
+    text-align: center;
+}
+.pricing_card_info {
+    padding: 30px 0;
+}
+.pricing_list {
+
+}
+.pricing_list_icon {
+    color: #797979;
+    margin-bottom: 11px;
+}

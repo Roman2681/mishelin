@@ -1,36 +1,103 @@
 .header {
-    background: #000000
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
 }
 .header_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
-}
-.header_logo {
-    padding: 13px 16px;
-    background: #FFFFFF;
-    border-radius: 5px;
-   :hover {
-    background-color: aqua;
+    padding: 15px 0;
+    @include _768 {
+        padding: 30px 0;
     }
 }
-.header_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header_burger{
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 22px;
+    @include _1024{
+        display: none;
+    }
 }
-.header_menu {
-    display: flex;
-    align-items: center;
-    column-gap: 47px;
+.header_burger span{
+    background: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 10px;
 }
+.header_burger:before,
+.header_burger:after{
+    content:'';
+    background: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+.header_burger:before{
+    top: 0;
+}
+.header_burger:after{
+    bottom: 0;
+}
+.header_logo {
+    display: flex;
+    max-width: 114px;
+    @include _768 {
+        max-width: 256px;
+    }
+}
+.header_menu{
+    background: black;
+    display: none;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 50px 10px;
+    @include _1024 {
+        display: flex !important; 
+        width: auto;
+        position: static;
+        background: transparent;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    &-open{
+        display: flex;
+    }
+}
+
+.header_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    @include _1024 {
+        flex-direction: row;
+        gap: 47px;
+    }
+}
+
 .header_link {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
 }
+.header_link:hover{
+    color: gold;
+}
+
 .header_button {
     background: #5BC8EF;
     border-radius: 35px;
@@ -38,6 +105,12 @@
     line-height: 22px;
     color: #FFFFFF;
 }
-.header_menu_link {
+.header_button:hover{
+    background-color: aqua;
+    box-shadow: 1px 1px 3px 3px blue;
+    transform: translateX(2px);
+    color: gold;
+}
+.header_nav_link {
     display: none;
 }

@@ -1,0 +1,67 @@
+.features {
+    padding: 50px 0;
+    text-align: center;
+    @include _1600 {
+        padding: 100px 0 80px 0;
+        background: url(../img/footprints2.png) top left no-repeat;
+        }
+}
+.features_inner {
+    padding: 0 30px;
+}
+.features_title {
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #4F4F4F;
+    max-width: 355px;
+    @include _768 {
+        font-size: 48px;
+        line-height: 65px;
+        max-width: 869px;
+        padding-bottom: 10px;
+    }
+}
+.features_text {
+    padding-bottom: 50px;
+    color: #4F4F4F;
+    max-width: 306px;
+    @include _768 {
+        max-width: 847px;
+    }
+}
+.features_cards {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #4F4F4F;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 43px;
+    margin-bottom: 43px;
+    justify-items: center;
+    @include _768 {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px 60px;
+    }
+}
+
+.features_card_icon {
+    margin-bottom: 19px;
+}
+
+.features_card_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #455EA7;
+    margin-bottom: 9px;
+    @include _768 {
+    margin-bottom: 10pxpx;
+    }
+}
+.features_card_text {
+    max-width: 218px;
+}

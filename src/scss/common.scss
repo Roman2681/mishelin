@@ -6,11 +6,44 @@ body{
     line-height: 30px;
     color: #FFFFFF;
 }
-.container{
-    margin: 0 auto;
-    max-width: 1420px;
-    padding: 0 20px;
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+.main {
+    flex: 1;
+}
+.container{
+    padding: 0 10px;
+    margin: 0 auto;
+    @include _768 {
+        
+        max-width: 1480px;
+        padding: 0 20px;
+    }
+    @include _1440{
+        padding: 0 140px;
+    }
+}
+.h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4F4F4F;
+    margin-bottom: 10px;
+
+    @include _768 {
+        font-size: 48px;
+        line-height: 65px;
+        text-align: left;
+        border-left: 4px solid #5BC8EF;
+        padding-left: 10px;
+    }
+}
+
 .span{
     color: #55BBCC;
 }

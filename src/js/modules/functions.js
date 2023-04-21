@@ -14,3 +14,29 @@ export function isWebp(){
         document.documentElement.classList.add(className);
     })
 }
+const burger = document.querySelector('.header_burger');
+    const menu = document.querySelector('.header_menu');
+
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('header_menu-open')
+})
+
+$('.testimonials_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    Infinite:true,
+    arrows: true,
+    fade: true,
+    asNavFor: '.testimonials_users'
+  });
+  $('.testimonials_users').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    Infinite:true,
+    arrows: false,
+    asNavFor: '.testimonials_slider',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
