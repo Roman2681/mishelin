@@ -6,9 +6,11 @@
         background: url(../img/footprints2.png) top left no-repeat;
         }
 }
+
 .features_inner {
     padding: 0 30px;
 }
+
 .features_title {
     padding-bottom: 50px;
     font-weight: 700;
@@ -22,16 +24,22 @@
         line-height: 65px;
         max-width: 869px;
         padding-bottom: 10px;
+        border-left: 4px solid #5BC8EF;
+        padding-left: 10px;
+        text-align: left;
     }
 }
+
 .features_text {
     padding-bottom: 50px;
     color: #4F4F4F;
     max-width: 306px;
     @include _768 {
         max-width: 847px;
+        text-align: left;
     }
 }
+
 .features_cards {
     font-size: 16px;
     line-height: 30px;
@@ -62,6 +70,8 @@
     margin-bottom: 10pxpx;
     }
 }
+
 .features_card_text {
     max-width: 218px;
 }
+

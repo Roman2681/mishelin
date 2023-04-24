@@ -14,11 +14,11 @@ export function isWebp(){
         document.documentElement.classList.add(className);
     })
 }
-const burger = document.querySelector('.header_burger');
+    const burger = document.querySelector('.header_burger');
     const menu = document.querySelector('.header_menu');
 
     burger.addEventListener('click', () => {
-        menu.classList.toggle('header_menu-open')
+    menu.classList.toggle('header_menu-open')
 })
 
 $('.testimonials_slider').slick({

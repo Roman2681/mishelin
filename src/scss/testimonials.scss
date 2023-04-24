@@ -2,17 +2,19 @@
     background: #455EA7;
     padding: 50px 10px;
 }
-.testimonials_inner {
-}
+
 .testimonials_info {
     margin-bottom: 33px;
 }
+
 .testimonials_title {
     color: #F2F2F2;
 }
+
 .testimonials_text {
     color: #F2F2F2;
 }
+
 .testimonials_wrapper{
     padding: 0 15px;
     @include _768 {
@@ -25,6 +27,7 @@
         padding: 0 140px;
     }
 }
+
 .testimonials_card {
     margin: 22px 0 55px 0;
     padding: 30px 14px;
@@ -35,8 +38,8 @@
     @include _768{
         margin:  0 70px 55px 70px;
     }
-    
 }
+
 .testimonials_card::after{
     content: '' ;
     display: block;
@@ -52,9 +55,8 @@
         border-left: 24px solid transparent;
         border-right: 24px solid transparent;
     }
-   
-   
 }
+
 .testimonials_card_title {
     font-weight: 700;
     font-size: 32px;
@@ -64,13 +66,14 @@
     @include _768{
         margin-bottom: 15px;
     }
-    
 }
+
 .testimonials_card_text {
     font-style: italic;
     text-align: center;
     color: #303030;
 }
+
 .testimonials_users {
     max-width: 484px;
     margin: 0 auto;
@@ -79,24 +82,27 @@
         padding: 0 23px;
     }
 }
+
 .users_foto {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px 0;
 }
-.user_foto-active .user_img{
-}
-.user_img {
-    
-}
+
 .slick-current img{
-   transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform .2s ease;   
+ }
+ 
+ .slick-slide img{
    transition: transform .2s ease;   
 }
+
 .slick-list{
     padding: 0 !important;
 }
+
 .slick-arrow{
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,21 +114,49 @@
         height: 60px;
     }
 }
+
 .slick-prev{
     background-image: url('../img/chevron-down\ \(3\).png');
     left: -40px;
+
+    &:hover,
+    &:focus {
+        background-image: url('../img/chevron-down\ \(3\).png');
+        background-size: cover;
+    }
+
     @include _768{
         background-image: url('../img/chevron-down\ \(4\).png');
+
+        &:hover,
+        &:focus {
+            background-image: url('../img/chevron-down\ \(4\).png');
+            background-size: cover;
+        }
     }
 }
 
 .slick-next{
     background-image: url('../img/chevron-down\ \(2\).png');
     right: -40px;
+
+    &:hover,
+    &:focus {
+        background-image: url('../img/chevron-down\ \(2\).png');
+        background-size: cover;
+    }
+
     @include _768{
         background-image: url('../img/chevron-down\ \(5\).png');
+        
+        &:hover,
+        &:focus {
+            background-image: url('../img/chevron-down\ \(5\).png');
+            background-size: cover;
+        }
     }
 }
+
 .slick-arrow::before{
     display: none;
 }
