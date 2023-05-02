@@ -4,13 +4,13 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: $text-white;
 }
 
 .wrapper {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .main {
@@ -21,7 +21,6 @@ body{
     padding: 0 10px;
     margin: 0 auto;
     @include _768 {
-        
         max-width: 1480px;
         padding: 0 20px;
     }
@@ -31,20 +30,19 @@ body{
 }
 
 .h2{
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     text-align: center;
     text-transform: uppercase;
-    color: #4F4F4F;
-    margin-bottom: 10px;
-
+    color: $text-dark;
     @include _768 {
+        border-left: 4px solid $primary;
+        padding-left: 10px;
         font-size: 48px;
         line-height: 65px;
         text-align: left;
-        border-left: 4px solid #5BC8EF;
-        padding-left: 10px;
     }
 }
 

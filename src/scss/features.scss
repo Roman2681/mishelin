@@ -2,8 +2,8 @@
     padding: 50px 0;
     text-align: center;
     @include _1600 {
-        padding: 100px 0 80px 0;
         background: url(../img/footprints2.png) top left no-repeat;
+        padding: 100px 0 80px 0;
         }
 }
 
@@ -12,28 +12,28 @@
 }
 
 .features_title {
+    max-width: 355px;
     padding-bottom: 50px;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+    color: $text-dark;
     text-transform: uppercase;
-    color: #4F4F4F;
-    max-width: 355px;
     @include _768 {
+        max-width: 869px;
+        border-left: 4px solid $primary;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        text-align: left;
         font-size: 48px;
         line-height: 65px;
-        max-width: 869px;
-        padding-bottom: 10px;
-        border-left: 4px solid #5BC8EF;
-        padding-left: 10px;
-        text-align: left;
     }
 }
 
 .features_text {
-    padding-bottom: 50px;
-    color: #4F4F4F;
     max-width: 306px;
+    padding-bottom: 50px;
+    color:secondary;
     @include _768 {
         max-width: 847px;
         text-align: left;
@@ -41,15 +41,15 @@
 }
 
 .features_cards {
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    color: #4F4F4F;
     display: grid;
     grid-template-columns: 1fr;
     gap: 43px;
-    margin-bottom: 43px;
     justify-items: center;
+    margin-bottom: 43px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: $text-dark;
     @include _768 {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px 60px;

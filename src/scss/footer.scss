@@ -42,11 +42,12 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid #5BC8EF;
+    border: 1px solid $primary;
     padding: 8px;
-    &:hover, :active {
+    &:hover, 
+    &:focus {
         border: 1px solid blue;
-        box-shadow: 1px 1px 1px 1px red;
+        box-shadow: 1px 1px 1px 1px blue;
         transform: translateY(-2px);
     }
 }

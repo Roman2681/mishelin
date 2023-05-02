@@ -1,29 +1,29 @@
 .button {
-    background: #5BC8EF;
-    border: 1px solid #5BC8EF;
+    border: 1px solid $primary;
     border-radius: 35px;
+    background: $primary;
     padding: 20px 30px;
     text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $text-white;
     &:hover, 
     &:active{
+        border: 1px solid $primary;
         background: white;
-        color: #5BC8EF;
         box-shadow: 0px 15px 70px rgba(0, 0, 0, 0.15);
-        border: 1px solid #5BC8EF;
+        color: $primary;
     }
 }
 
 .button_primary{
-    color: #5BC8EF;
-    background: #FFFFFF;
+    background: $text-white;
     box-shadow: 0px 15px 70px rgb(0 0 0 / 15%);
+    color: $primary;
     &:hover, 
     &:active{
-        color: #FFFFFF;
-        background:  #5BC8EF;
+        background:  $primary;
+        color: $text-white;
     } 
 }

@@ -1,9 +1,8 @@
 .pricing {
     padding: 60px 0 55px 0;
-    
     @include _1600 {
-    padding: 50px 0 80px 0;
     background: url(../img/footprints.png) top right no-repeat;
+    padding: 50px 0 80px 0;
     }
 }
 
@@ -19,7 +18,7 @@
 }
 
 .pricing_text {
-    color: #4F4F4F;
+    color: $text-dark;
     text-align: center;
     @include _768 {
         color: #333333;
@@ -49,26 +48,27 @@
 }
 
 .pricing_card_menu {
-    background: linear-gradient(220.27deg, #5BC8EF 23.91%, #455EA7 95.9%);
-    text-align: center;
+    background: linear-gradient(220.27deg, $primary 23.91%, #455EA7 95.9%);
     padding: 20px 0;
+    text-align: center;
 }
 
 .pricing_card_title {
+    margin-bottom: 6px;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+    color: $text-white;
     text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 6px;
+   
 }
 
 .pricing_card_price {
     font-weight: 700;
     font-size: 48px;
     line-height: 65px;
+    color: $text-white;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 .pricing_time_work {
@@ -85,11 +85,11 @@
 }
 
 .pricing_list_icon {
-    color: #797979;
     margin-bottom: 11px;
+    color: #797979;
     &:hover,
     &:active{
-        color: #4F4F4F;
+        color: $text-dark;
         text-decoration: underline;
     }
 }

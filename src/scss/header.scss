@@ -1,10 +1,10 @@
 .header {
-    background: #000000;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 50;
+    background: #000000;
 }
 
 .header_inner {
@@ -18,8 +18,8 @@
 }
 
 .header_burger{
-    display: block;
     position: relative;
+    display: block;
     width: 32px;
     height: 22px;
     @include _1024{
@@ -28,22 +28,22 @@
 }
 
 .header_burger span{
-    background: #FFFFFF;
     position: absolute;
     width: 100%;
     height: 2px;
     left: 0;
     top: 10px;
+    background: $text-white;
 }
 
 .header_burger:before,
 .header_burger:after{
     content:'';
-    background: #FFFFFF;
     position: absolute;
     width: 100%;
     height: 2px;
     left: 0;
+    background: $text-white;
 }
 
 .header_burger:before{
@@ -67,21 +67,21 @@
 }
 
 .header_menu{
-    background: black;
-    display: none;
-    justify-content: center;
-    width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
+    display: none;
+    justify-content: center;
+    width: 100%;
+    background: black;
     padding: 50px 10px;
     @include _1024 {
+        position: static;
         display: flex !important; 
         width: auto;
-        position: static;
-        background: transparent;
         justify-content: space-between;
         align-items: center;
+        background: transparent;
         padding: 0;
     }
     &-open{
@@ -104,7 +104,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $text-white;
     text-transform: uppercase;
 
     &:hover, 
@@ -114,18 +114,7 @@
 }
 
 .header_button {
-    background: #5BC8EF;
-    border-radius: 35px;
-    padding: 19px 38px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.header_button:hover{
-    background-color: aqua;
-    box-shadow: 1px 1px 3px 3px blue;
-    transform: translateX(2px);
-    color: gold;
+    text-transform: uppercase;
 }
 
 .header_nav_link {

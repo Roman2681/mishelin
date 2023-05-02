@@ -1,6 +1,6 @@
 .hero {
-    padding-top: 130px;
     position: relative;
+    padding-top: 130px;
     text-align: center;
     background: url(../img/pexels-gustavo-fring-6720537\ 1.png) no-repeat center / cover;
     @include _768 {
@@ -28,8 +28,8 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+    color: $text-white;
     text-transform: uppercase;
-    color: #FFFFFF;
     @include _768{
     font-size: 48px;
     line-height: 65px;
@@ -46,12 +46,17 @@
 .hero_img {
     display: none;
     @include _1600 {
-        width: 45%;
-        display: flex;
-        max-width: 893px;
-        max-height: 615px;
         position: absolute;
         right: 0;
         bottom: 0;
+        display: flex;
+        width: 45%;
+        max-width: 893px;
+        max-height: 615px;
     }
+}
+.app_store:hover,
+.app_store:active {
+    transform: translateX(5px);
+    box-shadow: 1px 1px 2px 2px wheat;
 }
