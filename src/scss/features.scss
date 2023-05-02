@@ -12,28 +12,15 @@
 }
 
 .features_title {
-    max-width: 355px;
-    padding-bottom: 50px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: $text-dark;
-    text-transform: uppercase;
     @include _768 {
-        max-width: 869px;
-        border-left: 4px solid $primary;
-        padding-left: 10px;
-        padding-bottom: 10px;
-        text-align: left;
-        font-size: 48px;
-        line-height: 65px;
+        margin-bottom: 10px;
     }
 }
 
 .features_text {
     max-width: 306px;
     padding-bottom: 50px;
-    color:secondary;
+    color: $text-dark;
     @include _768 {
         max-width: 847px;
         text-align: left;
@@ -67,7 +54,7 @@
     color: #455EA7;
     margin-bottom: 9px;
     @include _768 {
-    margin-bottom: 10pxpx;
+    margin-bottom: 10px;
     }
 }
 

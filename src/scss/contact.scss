@@ -7,7 +7,6 @@
 }
 
 .contact_inner {
-    
     @include _768 {
     display: grid;
     grid-template-columns: 1fr 1fr;

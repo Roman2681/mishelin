@@ -14,10 +14,10 @@ export function isWebp(){
         document.documentElement.classList.add(className);
     })
 }
-    const burger = document.querySelector('.header_burger');
-    const menu = document.querySelector('.header_menu');
+const burger = document.querySelector('.header_burger');
+const menu = document.querySelector('.header_menu');
 
-    burger.addEventListener('click', () => {
+burger.addEventListener('click', () => {
     menu.classList.toggle('header_menu-open')
 })
 
