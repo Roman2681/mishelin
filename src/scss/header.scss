@@ -73,16 +73,16 @@
     display: none;
     justify-content: center;
     width: 100%;
-    background: black;
     padding: 50px 10px;
+    background: black;
     @include _1024 {
         position: static;
         display: flex !important; 
-        width: auto;
         justify-content: space-between;
         align-items: center;
-        background: transparent;
+        width: auto;
         padding: 0;
+        background: transparent;
     }
     &-open{
         display: flex;

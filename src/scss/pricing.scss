@@ -1,8 +1,8 @@
 .pricing {
     padding: 60px 0 55px 0;
     @include _1600 {
-    background: url(../img/footprints.png) top right no-repeat;
-    padding: 50px 0 80px 0;
+        padding: 50px 0 80px 0;
+        background: url(../img/footprints.png) top right no-repeat;
     }
 }
 
@@ -42,14 +42,14 @@
 }
 
 .pricing_card {
+    overflow: hidden;
     border-radius: 30px;
     box-shadow: 0px 15px 70px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
 }
 
 .pricing_card_menu {
-    background: linear-gradient(220.27deg, $primary 23.91%, #455EA7 95.9%);
     padding: 20px 0;
+    background: linear-gradient(220.27deg, $primary 23.91%, #455EA7 95.9%);
     text-align: center;
 }
 
@@ -58,17 +58,16 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    color: $text-white;
     text-transform: uppercase;
-   
+    color: $text-white;   
 }
 
 .pricing_card_price {
     font-weight: 700;
     font-size: 48px;
     line-height: 65px;
-    color: $text-white;
     text-transform: uppercase;
+    color: $text-white;
 }
 
 .pricing_time_work {

@@ -1,6 +1,6 @@
 .footer {
-    background: #455EA7;
     padding: 75px 0;
+    background: #455EA7;
 }
 
 .footer_inner {
@@ -41,13 +41,13 @@
     display: flex;
     width: 32px;
     height: 32px;
+    padding: 8px;
     border-radius: 50%;
     border: 1px solid $primary;
-    padding: 8px;
     &:hover, 
     &:focus {
-        border: 1px solid blue;
-        box-shadow: 1px 1px 1px 1px blue;
         transform: translateY(-2px);
+        border: 1px solid $primary;
+        box-shadow: 1px 1px 1px 1px $primary;
     }
 }
